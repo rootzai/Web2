@@ -1,0 +1,702 @@
+/* Nike-inspired FanUp.ai Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #111;
+}
+
+.nike-app {
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.nike-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nike-top-bar {
+  background: #111;
+  color: white;
+  padding: 8px 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 24px;
+}
+
+.nike-top-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nike-top-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.nike-top-links a:hover {
+  color: #ccc;
+}
+
+.nike-nav {
+  padding: 16px 24px;
+  background: white;
+}
+
+.nike-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nike-logo {
+  height: 40px;
+}
+
+.nike-nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nike-nav-link {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  cursor: pointer;
+  padding: 8px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nike-nav-link:hover {
+  border-bottom-color: #111;
+}
+
+/* Hero Section */
+.nike-hero {
+  padding: 80px 24px;
+  background: #f7f7f7;
+}
+
+.nike-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.hero-logo {
+  height: 60px;
+  margin-bottom: 24px;
+}
+
+.nike-hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 0.9;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.nike-hero-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.nike-hero-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.nike-hero-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 8px;
+}
+
+/* Button Styles */
+.nike-btn {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.nike-btn-primary {
+  background: #111;
+  color: white;
+}
+
+.nike-btn-primary:hover {
+  background: #333;
+}
+
+.nike-btn-secondary {
+  background: white;
+  color: #111;
+  border: 2px solid #111;
+}
+
+.nike-btn-secondary:hover {
+  background: #111;
+  color: white;
+}
+
+/* Container */
+.nike-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Section Headers */
+.nike-section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-logo {
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.nike-section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+/* Strategy Section */
+.nike-strategy {
+  padding: 100px 0;
+  background: white;
+}
+
+.nike-strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.nike-strategy-card {
+  background: #f7f7f7;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.nike-strategy-card:hover {
+  transform: translateY(-8px);
+}
+
+.strategy-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.strategy-content {
+  padding: 32px;
+}
+
+.strategy-phase {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.strategy-content h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.strategy-hashtag {
+  font-size: 14px;
+  color: #4080FF;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.strategy-content p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.strategy-metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metric {
+  background: #111;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.strategy-footer {
+  text-align: center;
+}
+
+.strategy-footer h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+/* Sports Section */
+.nike-sports {
+  padding: 100px 0;
+  background: #f7f7f7;
+}
+
+.nike-sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.nike-sport-card {
+  position: relative;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.nike-sport-card:hover {
+  transform: scale(1.05);
+}
+
+.nike-sport-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nike-sport-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 40px 24px 24px;
+}
+
+.nike-sport-overlay h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.nike-sport-overlay p {
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+
+.nike-sport-btn {
+  background: white;
+  color: #111;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nike-sport-btn:hover {
+  background: #f0f0f0;
+}
+
+/* Rewards Section */
+.nike-rewards {
+  padding: 100px 0;
+  background: white;
+}
+
+.nike-rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.nike-reward-card {
+  text-align: center;
+  padding: 40px 24px;
+  background: #f7f7f7;
+  border-radius: 12px;
+}
+
+.reward-icon {
+  font-size: 3rem;
+  margin-bottom: 24px;
+}
+
+.nike-reward-card h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.nike-reward-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* System Section */
+.nike-system {
+  padding: 100px 0;
+  background: #f7f7f7;
+}
+
+.nike-system-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.nike-system-step {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: #111;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0 auto 24px;
+}
+
+.nike-system-step h3 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  color: #111;
+}
+
+.nike-system-step p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Metrics Section */
+.nike-metrics {
+  padding: 100px 0;
+  background: #111;
+  color: white;
+}
+
+.nike-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.nike-stat {
+  text-align: center;
+}
+
+.nike-stat-number {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+  color: #4080FF;
+}
+
+.nike-stat-label {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+/* Showcase Section */
+.nike-showcase {
+  padding: 100px 0;
+  background: white;
+}
+
+.nike-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.nike-showcase-item {
+  text-align: center;
+  padding: 40px 24px;
+  background: #f7f7f7;
+  border-radius: 12px;
+}
+
+.nike-showcase-item img {
+  width: 200px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.nike-showcase-item h4 {
+  font-size: 1.25rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.nike-showcase-item p {
+  color: #666;
+}
+
+/* Results Section */
+.nike-section {
+  padding: 100px 0;
+}
+
+.results-card {
+  background: white;
+  padding: 60px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.results-card h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.result-item {
+  text-align: center;
+}
+
+.result-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.result-value {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #111;
+}
+
+.results-highlight {
+  background: #4080FF;
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.highlight-amount {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.highlight-label {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+/* Confidential Data and Disclaimer Styles */
+.confidential {
+  color: #999 !important;
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.artmo-disclaimer {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #856404;
+  line-height: 1.4;
+}
+
+.artmo-disclaimer strong {
+  color: #721c24;
+}
+
+/* CTA Section */
+.nike-cta {
+  padding: 100px 0;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.cta-logo {
+  height: 60px;
+  margin-bottom: 24px;
+}
+
+.nike-cta-title {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 24px;
+}
+
+.nike-cta-subtitle {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.nike-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Sport Page Styles */
+.nike-sport-hero {
+  padding: 100px 0;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.nike-sport-hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.nike-sport-hero p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.sport-placeholder {
+  background: white;
+  padding: 60px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sport-placeholder h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.sport-placeholder p {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.sport-placeholder ul {
+  text-align: left;
+  color: #666;
+  margin-top: 24px;
+}
+
+.sport-placeholder li {
+  margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nike-hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .nike-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .nike-strategy-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .nike-sports-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .results-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .nike-nav-links {
+    display: none;
+  }
+  
+  .nike-hero-buttons,
+  .nike-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
